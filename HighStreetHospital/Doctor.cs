@@ -9,16 +9,32 @@ namespace HighStreetHospital
     class Doctor : HospitalEmployee
     {
         //Fields
-        private string specialArea;
-        
+        protected string specialtyAreaFoot;
+
         //Properties 
-        public int NumberOfWheels
+        public string SpecialtyAreaFoot
         {
-            get { return this.; }
+            get { return this.specialtyAreaFoot; }
+            set { this.specialtyAreaFoot = value; }
         }
+
+        //Constructors
         public Doctor()
         {
 
         }
+        public Doctor(string specialtyAreaFoot)
+        {
+            this.specialtyAreaFoot = specialtyAreaFoot;
+        }
+
+        //Methods //the virtual keyword gives the derived class the 
+        //option to override the specific method
+        //public virtual void ()
+
+        //{
+        //    Console.WriteLine(employeeName);
+        //}
+        
     }
 }

@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace HighStreetHospital
 {
-    class HospitalEmpoyee
+    class HospitalEmployee
     {
         //Fields
         protected string employeeName;
         protected int employeeNumber;
-        protected int numberOfPatients;
-        protected string specialtyArea;
-        protected string department;
-        protected bool isOnPhone;
-        protected bool isSweeping;
+        protected string strEmployeeNumber;
+        protected string occupation;
+                
+        //protected int numberOfPatients;
+        //string specialtyArea;
+        //protected string department;
+        //protected bool isOnPhone;
+        //protected bool isSweeping;
 
         //Properties
         public string EmployeeName
@@ -28,37 +31,57 @@ namespace HighStreetHospital
             get { return this.employeeNumber; }
             set { this.employeeNumber = value; }
         }
-        public int NumberOfPatients
+        public string StrEmployeeNumber
         {
-            get { return this.numberOfPatients; }
-            set { this.numberOfPatients = value; }
+            get { return this.strEmployeeNumber; }
+            set { this.strEmployeeNumber = value; }
         }
-        public string SpecialtyArea
+        public string Occupation
         {
-            get { return this.specialtyArea; }
-            set { this.specialtyArea = value; }
+            get { return this.occupation; }
+            set { this.occupation = value; }
         }
-        public string Department
-        {
-            get { return this.department; }
-            set { this.department = value; }
-        }
-        public bool IsOnPhone
-        {
-            get { return this.isOnPhone; }
-            set { this.isOnPhone = value; }
-        }
-        public bool IsSweeping
-        {
-            get { return this.isSweeping; }
-            set { this.isSweeping = value; }
-        }
+        //public int NumberOfPatients
+        //{
+        //    get { return this.numberOfPatients; }
+        //    set { this.numberOfPatients = value; }
+        //}
+       
+        //public string Department
+        //{
+        //    get { return this.department; }
+        //    set { this.department = value; }
+        //}
+        //public bool IsOnPhone
+        //{
+        //    get { return this.isOnPhone; }
+        //    set { this.isOnPhone = value; }
+        //}
+        //public bool IsSweeping
+        //{
+        //    get { return this.isSweeping; }
+        //    set { this.isSweeping = value; }
+        //}
 
         //Constructors
-        public HospitalEmpoyee()
+        public HospitalEmployee()
         {
 
         }
-        public HospitalEmpoyee()
+        public HospitalEmployee(string employeeName, int employeeNumber, string occupation)
+        {
+            this.employeeName = employeeName;
+            this.employeeNumber = employeeNumber;
+            this.occupation = occupation;
+           // this.strEmployeeNumber = strEmployeeNumber;
+            //this.numberOfPatients = numberOfPatients;
+            //this.specialtyArea = specialtyArea;
+            //this.department = department;
+            //this.isOnPhone = isOnPhone;
+            //this.isSweeping = isSweeping;
+        }
+
+        //Methods
+
     }
 }
